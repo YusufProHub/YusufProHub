@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>لوحة المستخدم</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+<script src="firebase-config.js"></script>
+<script src="js/main.js"></script>
+<script src="js/services.js"></script>
+<script src="js/language.js"></script>
+</head>
+<body>
+<div class="container">
+  <h1 id="welcomeText">مرحباً، <span id="userName"></span></h1>
+  <p id="walletText">رصيدك: <span id="userPoints"></span> نقاط</p>
+  <p id="referralText">رابط الإحالة الخاص بك: <span id="refLink"></span></p>
+
+  <h2>الخدمات المتاحة</h2>
+  <div id="servicesList" class="services"></div>
+
+  <button onclick="logout()">تسجيل خروج</button>
+</div>
+</body>
+</html>

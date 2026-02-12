@@ -1,0 +1,7 @@
+body { font-family: Arial; background: #f5f7fa; color: #111; margin:0; padding:0;}
+.container{ max-width: 1000px; margin:auto; padding:20px;}
+h1,h2,h3{ color:#1e293b; }
+button{ padding:10px 15px; border:none; border-radius:8px; cursor:pointer; background:#38bdf8; color:#000; margin:5px;}
+input{ padding:10px; width:100%; margin:5px 0; border-radius:8px; border:1px solid #ccc;}
+.services{ display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:15px;}
+.services .service-box{ background:#fff; border-radius:12px; padding:15px; box-shadow:0 0 15px rgba(0,0,0,0.1);}
