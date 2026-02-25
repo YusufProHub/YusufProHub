@@ -1,40 +1,55 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yusuf Pro Hub</title>
-<link rel="stylesheet" href="style.css">
-<!-- Firebase SDKs -->
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-analytics-compat.js"></script>
-<script src="firebase-config.js"></script>
-<script src="auth.js"></script>
-<script src="language.js"></script>
-<script>
-  // Initialize Analytics
-  if (typeof firebase !== 'undefined') {
-    firebase.analytics();
-  }
-</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yusuf Pro Hub - خدمات رقمية متكاملة</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
-  <h1 id="siteTitle">Yusuf Pro Hub</h1>
-  <div class="language-toggle">
-    <button onclick="setLanguage('ar')">عربي</button>
-    <button onclick="setLanguage('en')">English</button>
-  </div>
-  <div id="authCard">
-    <h2 id="loginTitle">تسجيل / دخول</h2>
-    <input id="email" type="email" placeholder="البريد الإلكتروني">
-    <input id="phone" type="text" placeholder="رقم الهاتف">
-    <input id="password" type="password" placeholder="كلمة المرور">
-    <button onclick="register()">تسجيل جديد</button>
-    <button onclick="login()">تسجيل دخول</button>
-  </div>
-</div>
+    <nav>
+        <a href="index.html" class="logo">Yusuf Pro Hub</a>
+        <ul class="nav-links">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="services/services.html">الخدمات</a></li>
+            <li><a href="dashboard.html">لوحة التحكم</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>مرحباً بك في Yusuf Pro Hub</h1>
+        <p>وجهتك الأولى للحصول على أفضل الخدمات الرقمية باحترافية عالية وأسعار تنافسية.</p>
+        <div class="hero-btns">
+            <a href="services/services.html" class="btn btn-primary">استعرض الخدمات</a>
+            <a href="dashboard.html" class="btn btn-outline">لوحة التحكم</a>
+        </div>
+    </header>
+
+    <section class="container">
+        <h2 class="section-title">لماذا تختارنا؟</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>جودة عالية</h3>
+                <p>نضمن لك تنفيذ الخدمات بأعلى معايير الجودة والاحترافية.</p>
+            </div>
+            <div class="service-card">
+                <h3>دعم فني</h3>
+                <p>فريقنا متواجد دائماً لمساعدتك في أي استفسار أو مشكلة.</p>
+            </div>
+            <div class="service-card">
+                <h3>سرعة التنفيذ</h3>
+                <p>نحترم وقتك ونلتزم بتسليم الخدمات في المواعيد المحددة.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">الرئيسية</a>
+            <a href="services/services.html">الخدمات</a>
+            <a href="dashboard.html">لوحة التحكم</a>
+        </div>
+        <p>جميع الحقوق محفوظة &copy; 2026 Yusuf Pro Hub</p>
+    </footer>
 </body>
 </html>

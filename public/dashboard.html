@@ -1,33 +1,36 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>لوحة المستخدم</title>
-<link rel="stylesheet" href="style.css">
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
-<script src="firebase-config.js"></script>
-<script src="main.js"></script>
-<script src="services.js"></script>
-<script src="language.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم - Yusuf Pro Hub</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
-  <nav>
-    <ul>
-      <li><a href="services/services.html">خدماتنا</a></li>
-    </ul>
-  </nav>
-  <h1 id="welcomeText">مرحباً، <span id="userName"></span></h1>
-  <p id="walletText">رصيدك: <span id="userPoints"></span> نقاط</p>
-  <p id="referralText">رابط الإحالة الخاص بك: <span id="refLink"></span></p>
+    <nav>
+        <a href="index.html" class="logo">Yusuf Pro Hub</a>
+        <ul class="nav-links">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="services/services.html">الخدمات</a></li>
+            <li><a href="dashboard.html">لوحة التحكم</a></li>
+        </ul>
+    </nav>
 
-  <h2>الخدمات المتاحة</h2>
-  <div id="servicesList" class="services"></div>
+    <section class="container">
+        <div class="dashboard-header">
+            <h2>اشتراكاتي</h2>
+            <a href="index.html" class="btn btn-outline" style="color: var(--primary-color); border-color: var(--primary-color);">العودة للرئيسية</a>
+        </div>
+        
+        <div id="my-subscriptions" class="services-grid">
+            <!-- سيتم عرض الاشتراكات هنا -->
+        </div>
+    </section>
 
-  <button onclick="logout()">تسجيل خروج</button>
-</div>
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2026 Yusuf Pro Hub</p>
+    </footer>
+
+    <script src="dashboard.js"></script>
 </body>
 </html>
