@@ -8,7 +8,7 @@
     ],
     "rewrites": [
       {
-        "source": "**",
+        "source": "!/@(services/**|dashboard.html|admin.html|*.js|*.css)",
         "destination": "/index.html"
       }
     ]
